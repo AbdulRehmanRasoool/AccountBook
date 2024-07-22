@@ -25,7 +25,7 @@ namespace AccountBook.DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-R9G1F52;Database=AccountBookDB;TrustServerCertificate=True;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-SKSQHI2;Database=AccountBookDB;TrustServerCertificate=True;Trusted_Connection=True;");
             }
         }
 

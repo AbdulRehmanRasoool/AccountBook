@@ -84,10 +84,16 @@ namespace AccountBook.Services
             return true;
         }
 
-        public List<Store> ViewStores(int userId)
+        public List<Store> GetStores(int userId)
         {
             var userStores = _context.Stores.Where(x => x.UserId == userId).ToList();
             return userStores;
+        }
+
+        public Store GetStore(int storeId, int userId)
+        {
+            var store = _context.Stores.Where(x => x.Id == storeId && x.UserId == userId).FirstOrDefault();
+            return store;
         }
     }
 }
